@@ -12,19 +12,19 @@ Low-code integration platform to capture patient details.
 
 - [ ] [Create and update Configuration for appointment types](create_appt_config.json) 
 
-- [ ] [Create and update flow for an appointment type](Intake/create_flow.json) 
+- [ ] [Create and update flow for an appointment type](create_flow.json) 
 
-- [ ] [Create and update An Intake Form](Intake/create_form.json) 
+- [ ] [Create and update An Intake Form](create_form.json) 
 
-- [ ] [Create and update A Question](Intake/create_question.json) 
+- [ ] [Create and update A Question](create_question.json) 
 
-- [ ] [Fetch access token](Intake/fetch_access_token.json) 
+- [ ] [Fetch access token](fetch_access_token.json) 
 
-- [ ] [Fetch consent form](Intake/fetch_consent_form.json) 
+- [ ] [Fetch consent form](fetch_consent_form.json) 
 
-- [ ] [Fetch patient intake data](Intake/fetch_intake_data.json) 
+- [ ] [Fetch patient intake data](fetch_intake_data.json) 
 
-- [ ] [Register an encounter along with known patient details](Intake/register_encounter.json) 
+- [ ] [Register an encounter along with known patient details](register_encounter.json) 
 
 
 
