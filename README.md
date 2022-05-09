@@ -4,7 +4,7 @@ Documentation for APIs for patient intake.
 
 - [ ] [For details please refer Arintra website](https://arintra.com) 
 
-## Getting started
+## Quick Overview
 
 Arintra is a patient intake solution to capture patient details intelligently.
 
