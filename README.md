@@ -2,7 +2,7 @@
 
 Documentation for APIs for patient intake. 
 
-- [ ] [For details refer Arintra] (https://arintra.com)
+- [ ] [For details please refer Arintra website](https://arintra.com) 
 
 ## Getting started
 
