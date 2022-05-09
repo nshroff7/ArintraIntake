@@ -1,12 +1,20 @@
 # API documentation
 
+Documentation for APIs for patient intake. 
 
+- [ ] [For details refer Arintra] (https://arintra.com)
 
 ## Getting started
 
-Arintra is a patient intake solution.
+Arintra is a patient intake solution to capture patient details intelligently.
 
-Low-code integration platform to capture patient details.
+This can be embedded within you platform via low-code integration.
+
+These details include
+- History of Presenting Illness
+- Consent forms
+- Patient demographics
+- Past Medical History
 
 ## APIs
 
