@@ -10,7 +10,7 @@ Low-code integration platform to capture patient details.
 
 ## APIs
 
-- [ ] [Create and update Configuration for appointment types](Intake/create_appt_config.json) 
+- [ ] [Create and update Configuration for appointment types](create_appt_config.json) 
 
 - [ ] [Create and update flow for an appointment type](Intake/create_flow.json) 
 
