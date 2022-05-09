@@ -1,0 +1,29 @@
+{
+  "endpoint": "/fetchAccessToken",
+  "apiMethods": [
+    {
+      "method": "POST",
+      "input": {
+        "username": "",
+        "password": "",
+        "refresh_token": ""
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "access_token": "678GHJDHGH567JXCXXXXX"
+            }
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not fetch access token"
+          }
+        }
+      }
+    }
+  ]
+}

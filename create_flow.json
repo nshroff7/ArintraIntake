@@ -1,0 +1,159 @@
+{
+  "endpoint": "/updateFlow",
+  "apiMethods": [
+    {
+      "method": "GET",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "flow_id": "flow_10000"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "flowId": "flow_10000",
+              "flowConfig": {
+                "componentConfigs": [
+                  {
+                    "type": "CHIEF_COMPLAINTS"
+                  },
+                  {
+                    "hpiConfig": "IN_DEPTH",
+                    "type": "HPI"
+                  },
+                  {
+                    "type": "MEDICATIONS"
+                  },
+                  {
+                    "type": "ALLERGIES"
+                  },
+                  {
+                    "type": "PRE_EXISTING_CONDITION"
+                  },
+                  {
+                    "type": "SURGERIES"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not fetch the flow"
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "input": {
+        "practice_id": "10000",
+        "flowId": "flow_10000",
+        "flowConfig": {
+          "componentConfigs": [
+            {
+              "type": "CHIEF_COMPLAINTS"
+            },
+            {
+              "hpiConfig": "IN_DEPTH",
+              "type": "HPI"
+            },
+            {
+              "type": "MEDICATIONS"
+            }
+          ]
+        }
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "modified"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not modify the flow"
+          }
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "input": {
+        "practice_id": "10000",
+        "flowId": "flow_10000",
+        "flowConfig": {
+          "componentConfigs": [
+            {
+              "type": "CHIEF_COMPLAINTS"
+            },
+            {
+              "hpiConfig": "IN_DEPTH",
+              "type": "HPI"
+            },
+            {
+              "type": "MEDICATIONS"
+            },
+            {
+              "type": "ALLERGIES"
+            },
+            {
+              "type": "PRE_EXISTING_CONDITION"
+            },
+            {
+              "type": "SURGERIES"
+            }
+          ]
+        }
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Flow added successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not add the Flow"
+          }
+        }
+      }
+    },
+    {
+      "method": "DELETE",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "question_id": "flow_10000"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Flow deleted successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not delete the flow"
+          }
+        }
+      }
+    }
+  ]
+}

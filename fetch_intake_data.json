@@ -1,0 +1,88 @@
+{
+  "endpoint": "/fetchIntakeResponse",
+  "apiMethods": [
+    {
+      "method": "GET",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "conversation_id": "conv_1229910000019010"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "heading": "23 y/o M\nBack Pain, Cough",
+              "sections": [
+                {
+                  "header": "Back Pain",
+                  "data": [
+                    "Location: Upper/middle back",
+                    "Duration and progression: \"Started this morning\"",
+                    "Description: Moderate pain",
+                    "Character of pain: Sharp; Burning",
+                    "Associated with Numbness",
+                    "Radiates to Lower extremities; Abdomen",
+                    "Triggered by Lifting heavy weights",
+                    "Relieved by Mild exercise"
+                  ]
+                },
+                {
+                  "header": "Cough",
+                  "data": [
+                    "Acute cough (< 3 weeks)",
+                    "Onset: Sudden",
+                    "Frequency: Intermittent",
+                    "Severity: Moderate",
+                    "Description: Productive cough",
+                    "Consistency: Thick sputum",
+                    "Associated with Rhinorrhea"
+                  ]
+                },
+                {
+                  "header": "Additional Details:",
+                  "data": [
+                    "\"Is it safe to travel now?\""
+                  ]
+                },
+                {
+                  "header": "Medical History:",
+                  "data": [
+                    "Asthma",
+                    "Stroke",
+                    "Ear Infections",
+                    "Thyroid Surgery"
+                  ]
+                },
+                {
+                  "header": "Medication History:",
+                  "data": [
+                    "Levothyroxine",
+                    "Lisinopril"
+                  ]
+                },
+                {
+                  "header": "Allergies:",
+                  "data": [
+                    "Ibuprofen",
+                    "Eggs"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failure": {
+        "responseCode": 400,
+        "data": {
+          "error": "Could not fetch the intake response"
+        }
+      }
+    }
+  ]
+}

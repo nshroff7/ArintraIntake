@@ -1,0 +1,62 @@
+{
+  "endpoint": "/registerEncounter",
+  "apiMethods": [
+    {
+      "method": "POST",
+      "input": {
+        "practice_id": "10000",
+        "appointment": {
+          "date": "05/07/2022",
+          "appointmentid": "1126255",
+          "patient": {
+            "firstname": "Julius",
+            "lastname": "Bashirian",
+            "email": "rubie.binsea4380434@krajcik.biz",
+            "patientid": "7648",
+            "city": "GLADYSBERG",
+            "sex": "F",
+            "dob": "02/28/2000",
+            "mobilephone": "5554536816",
+            "consenttocall": true,
+            "consenttotext": true,
+            "racename": "White",
+            "address1": "Apt. 132 477 Baumbach La",
+            "zip": "37496",
+            "language6392code": "eng",
+            "homephone": "5554536816",
+            "ethnicitycode": "2186-5",
+            "state": "ME"
+          },
+          "appointmenttype": "New Patient",
+          "starttime": "17:00",
+          "patientappointmenttypename": "New Patient",
+          "departmentid": "150",
+          "providerid": "67",
+          "appointmentstatus": "2",
+          "appointmentnotes": [
+            {
+              "text": "Intake and Checkin done by Arintra"
+            }
+          ]
+        }
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "conversation_id": "conv_00000234555677",
+              "intake_url": "https://ihop2.arintra.com?cid=conv_00000234555677&lang=en"
+            }
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not register the encounter"
+          }
+        }
+      }
+    }
+  ]
+}

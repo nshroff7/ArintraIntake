@@ -1,0 +1,51 @@
+{
+  "endpoint": "/fetchConsentResponse",
+  "apiMethods": [
+    {
+      "method": "GET",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "conversation_id": "conv_1229910000019010"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "url": "https://abc.xyz",
+              "responses": [
+                {
+                  "form_id": "ar_cnf_01",
+                  "answers": [
+                    {
+                      "question": "Reason for blood draw",
+                      "answer": "fatigue"
+                    },
+                    {
+                      "question": "Do you or have you ever smoked tobacco?",
+                      "answer": "Never smoker"
+                    },
+                    {
+                      "question": "Have you had alcohol intoxication in the past 24 hours?",
+                      "answer": "No"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failure": {
+        "responseCode": 400,
+        "data": {
+          "error": "Could not fetch the consent response"
+        }
+      }
+    }
+  ]
+}

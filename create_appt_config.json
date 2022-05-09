@@ -1,0 +1,154 @@
+{
+  "endpoint": "/updateAptConfig",
+  "apiMethods": [
+    {
+      "method": "GET",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "config_id": "config_01"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "practice_id": "10000",
+              "config_id": "config_01",
+              "componentConfigs": [
+                {
+                  "forms": [
+                    "ar_cnf_01"
+                  ],
+                  "type": "CONSENT_FORM"
+                }
+              ],
+              "practiceIds": [
+                "10000"
+              ],
+              "flowId": "ar_flow_01",
+              "appointmentTypes": [
+                {
+                  "id": "ar_apt_03",
+                  "name": "NEW PATIENT"
+                }
+              ]
+            }
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not fetch the config"
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "input": {
+        "practice_id": "10000",
+        "config_id": "config_01",
+        "componentConfigs": [
+          {
+            "forms": [
+              "ar_cnf_01"
+            ],
+            "type": "CONSENT_FORM"
+          }
+        ],
+        "practiceIds": [
+          "10000"
+        ],
+        "flowId": "ar_flow_01",
+        "appointmentTypes": [
+          {
+            "id": "ar_apt_03",
+            "name": "NEW PATIENT"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "modified"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not modify the question"
+          }
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "input": {
+        "practice_id": "10000",
+        "config_id": "config_01",
+        "componentConfigs": [
+          {
+            "forms": [
+              "ar_cnf_01"
+            ],
+            "type": "CONSENT_FORM"
+          }
+        ],
+        "practiceIds": [
+          "10000"
+        ],
+        "flowId": "ar_flow_01",
+        "appointmentTypes": [
+          {
+            "id": "ar_apt_03",
+            "name": "NEW PATIENT"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Config added successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not add the config"
+          }
+        }
+      }
+    },
+    {
+      "method": "DELETE",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "config_id": "config_01"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Config deleted successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not add the config"
+          }
+        }
+      }
+    }
+  ]
+}

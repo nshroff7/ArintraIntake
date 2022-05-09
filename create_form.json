@@ -1,0 +1,140 @@
+{
+  "endpoint": "/updateForm",
+  "apiMethods": [
+    {
+      "method": "GET",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "form_id": "ar_cnf_01"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": {
+              "form_id": "ar_cnf_01",
+              "name": "HIPAA Compliance and Patient Consent Form (Notice of Privacy)",
+              "questionClusters": [
+                {
+                  "questionCluster": [
+                    "cnf_cha_mint_4439"
+                  ]
+                },
+                {
+                  "questionCluster": [
+                    "cnf_cha_mint_11311",
+                    "cnf_cha_mint_11312"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not fetch the form"
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "input": {
+        "practice_id": "10000",
+        "form_id": "ar_cnf_01",
+        "name": "HIPAA Compliance and Patient Consent Form",
+        "questionClusters": [
+          {
+            "questionCluster": [
+              "cnf_cha_mint_11311",
+              "cnf_cha_mint_11312",
+              "cnf_cha_mint_11313",
+              "cnf_cha_mint_70173",
+              "cnf_cha_mint_11306",
+              "cnf_cha_mint_11307"
+            ]
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "modified"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not modify the form"
+          }
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "input": {
+        "practice_id": "10000",
+        "form_id": "ar_cnf_01",
+        "name": "HIPAA Compliance and Patient Consent Form (Notice of Privacy)",
+        "questionClusters": [
+          {
+            "questionCluster": [
+              "cnf_cha_mint_4439"
+            ]
+          },
+          {
+            "questionCluster": [
+              "cnf_cha_mint_11311",
+              "cnf_cha_mint_11312"
+            ]
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Form added successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not add the form"
+          }
+        }
+      }
+    },
+    {
+      "method": "DELETE",
+      "input": {
+        "params": [
+          {
+            "practice_id": "10000",
+            "form_id": "ar_cnf_01"
+          }
+        ]
+      },
+      "output": {
+        "success": {
+          "responseCode": 200,
+          "data": {
+            "success": "Form deleted successfully"
+          }
+        },
+        "failure": {
+          "responseCode": 400,
+          "data": {
+            "error": "Could not delete the form"
+          }
+        }
+      }
+    }
+  ]
+}
